@@ -1,0 +1,9 @@
+{
+  "name": "deartes-papelaria-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page da DeArtes com widget Elfsight para o feed do Instagram",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

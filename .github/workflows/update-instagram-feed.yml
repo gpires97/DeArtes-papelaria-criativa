@@ -1,0 +1,34 @@
+name: Atualizar feed do Instagram
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # todo dia ao meio-dia UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Buscar postagens do Instagram
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+        run: node scripts/fetch-instagram.js
+
+      - name: Commitar alteracoes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/instagram-posts.json
+          git diff --cached --quiet || git commit -m "chore: atualizar feed do instagram"
+          git push

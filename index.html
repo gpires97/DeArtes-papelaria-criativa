@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeArtes Papelaria Criativa</title>
+  <meta name="description" content="Agendas, planners, kits festa e papelaria criativa personalizada." />
+  <!-- Logo da loja usada como icone da aba do navegador -->
+  <link rel="icon" href="assets/icon/icone.PNG" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+  <div class="bg-shape bg-shape-3"></div>
+
+  <header class="topbar">
+    <a class="brand-link" href="index.html">
+      <div class="logo-mark" aria-hidden="true">
+        <span class="circle"></span>
+        <span class="scissor">✂</span>
+        <span class="pencil">✏</span>
+      </div>
+      <p class="brand-name">DeArtes papelaria criativa</p>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero reveal">
+      <div class="hero-copy">
+        <p class="tag">feito com carinho para cada detalhe</p>
+        <h1>Papelaria criativa para momentos inesqueciveis</h1>
+        <p>
+          Personalizados para escola, festas, empresas e presentes afetivos.
+          Voce imagina, a DeArtes transforma em algo unico.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="https://api.whatsapp.com/send?phone=5541992468175&text=Oi%21%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noreferrer">Quero fazer meu pedido</a>
+          <a class="btn btn-outline" href="#servicos">Ver servicos</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Atendimento direto</h2>
+        <p>Fale no WhatsApp, envie sua ideia e receba orientacao para montar seu pedido ideal.</p>
+        <ul>
+          <li>Resposta rapida</li>
+          <li>Atendimento personalizado</li>
+          <li>Produtos sob encomenda</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="servicos" class="services reveal">
+      <div class="section-head">
+        <p class="kicker">destaque da primeira postagem</p>
+        <h2>Nossos servicos</h2>
+      </div>
+
+      <div class="services-grid">
+        <a class="service-item" href="agendas.html"><span>📓</span><p>Agendas e planners personalizados</p></a>
+        <a class="service-item" href="botons.html"><span>🎉</span><p>Bottons corporativos e casuais</p></a>
+        <a class="service-item" href="kit-festa.html"><span>🎂</span><p>Kit festa: topo de bolo, lembrancinhas, caixas e display de mesa</p></a>
+        <a class="service-item" href="mimos.html"><span>💗</span><p>Mimos afetivos</p></a>
+        <a class="service-item" href="trabalhos-academicos.html"><span>🎓</span><p>Trabalhos academicos</p></a>
+      </div>
+
+      <div class="teacher-box">
+        <h3>Exclusivo para professoras da educacao infantil</h3>
+        <div class="teacher-list">
+          <p><span>📚</span> Recursos pedagogicos digitais e manuais</p>
+          <p><span>🖼</span> Portfolio de cantinhos esteticos</p>
+          <p><span>🧩</span> Producao de cantos fixos para sala de referencia</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="instagram" class="instagram reveal">
+      <div class="section-head instagram-head">
+        <p class="kicker">acompanhe no instagram</p>
+        <h2>Ultimas postagens</h2>
+        <p class="instagram-sub">
+          Veja os trabalhos mais recentes e novidades da DeArtes.
+        </p>
+      </div>
+
+      <!-- Feed proprio: atualizado por GitHub Actions em data/instagram-posts.json -->
+      <p id="instagram-status" class="instagram-status">Carregando postagens...</p>
+      <div id="instagram-grid" class="instagram-grid"></div>
+
+      <a class="btn btn-outline instagram-btn" href="https://www.instagram.com/deartespapelaria_/" target="_blank" rel="noreferrer">
+        Ver perfil completo @deartespapelaria_
+      </a>
+    </section>
+
+    <section class="contact reveal">
+      <h2>Vamos criar algo lindo para o seu projeto?</h2>
+      <p>Entre em contato e conte o que voce precisa. Vamos montar cada detalhe do seu jeito.</p>
+      <a class="btn btn-main" href="https://api.whatsapp.com/send?phone=5541992468175&text=Oi%21%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noreferrer">Falar agora no WhatsApp</a>
+      <p class="phone">(41) 99246-8175</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>DeArtes Papelaria Criativa • atendimento por encomenda</p>
+    <p class="copyright">© <span id="copyright-year"></span> DeArtes Papelaria Criativa. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
